@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1bd633daaa.js" crossorigin="anonymous"></script>
+    <title>Random User API</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loader" id="loader">
+        <i class="fas fa-spinner"></i>
+      </div>
+        <div class="user">
+            <div class="refresh" id="fetch">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <div class="photo" id="photo">
+                <img id="foto" src="#" alt="perfil user">
+            </div>
+            <div class="info" id="info">
+              <div class="info-item">
+                <label for="name">Nome</label>
+                <p id="name"></p>
+              </div>
+              <div class="info-item">
+                <label for="age">Idade</label>
+                <p id="age"></p>
+              </div>
+              <div class="info-item">
+                <label for="gender">Gênero</label>
+                <p id="gender"></p>
+              </div>
+              <div class="info-item">
+                <label for="nac">País</label>
+                <p id="nac"></p>
+              </div>
+              <div class="info-item">
+                <label for="email">Email</label>
+                <p id="email"></p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

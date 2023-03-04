@@ -1,0 +1,1 @@
+Uma aplicação simples que obtem dados fictícios de usuários de maneira aleatória a partir da api [RANDOM USER GENERATOR API](https://randomuser.me/)

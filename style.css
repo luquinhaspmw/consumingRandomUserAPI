@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background-image:url("wave.svg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+}
+.loader{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+}
+.loader.show{
+    z-index: 2;
+    display: flex;
+}
+.loader.show .fa-spinner{
+    animation: loader 1.5s infinite ease-in-out !important;
+}
+@keyframes loader {
+    do{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.user{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 5px;
+}
+.refresh{
+    position: absolute;
+    left: 2%;
+    top: 1%;
+    font-size: 2rem;
+    color: rgb(151, 153, 5);
+    transition: .6s;
+    cursor: pointer;
+}
+.refresh:hover{
+    color: rgb(202, 206, 3);
+}
+.photo{
+    width: 25%;
+}
+#foto{
+    border-radius: 50%;
+    width: 100%;
+}
+.info{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hidden{
+    display: none !important;
+}
+label{
+    color: rgb(151, 153, 5);
+    padding: 0px 10px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+.info-item p:last-child{
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.726);
+    border-bottom: 1px solid rgb(48, 92, 20);
+}
+@media screen and (min-width:700px) and (max-width:1100px) {
+    .user{
+        width: 60%;
+    }
+}
+@media screen and (max-width:700px) {
+    .user{
+        width: 90%;
+    }
+    .info{
+        width: 100%;
+        font-size: 13px;
+    }
+}
